@@ -59,9 +59,9 @@ while True:
   print "THERE ARE " + str(num_likes) + " LIKED POSTS"
   print "RECEIVED " + str(len(likes['liked_posts']))
   for cur_post in likes['liked_posts']:
-    print "PROCESSING POST " + str(i) + ' ' + str(cur_post['id']) + ' ' + cur_post['post_url']
+    print "PROCESSING POST " + str(i) + ' ' + cur_post['blog_name'] + ' ' + cur_post['post_url']
     i = i + 1
-    os_path = PATH + '/tumblr/' + str(cur_post['id'])
+    os_path = PATH + '/tumblr/' + str(cur_post['blog_name'])
     try:
       os.makedirs(os_path)
       post_data = {}
