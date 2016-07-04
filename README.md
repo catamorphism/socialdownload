@@ -9,9 +9,17 @@ We're suck using python 2.7 because of pytumblr .
 * pytumblr
 
 # Install
-Requires a file called secrets.py which is not included.
+Requires a file called secrets.py which is not included (see below).
 
-It should contain your API and access tokens. It's format is:
+# Using the scripts
+
+Find the string 'jonathankoren' in the script and change it to your username. 
+
+Change the value of the PATH variable (if there is one) to the directory where you want to save files.
+
+## secrets.py
+
+This file should contain your API and access tokens. Its format is:
 
 ```python
 app_keys = {
@@ -30,7 +38,7 @@ app_keys = {
 
 access_keys = {
   'jonathankoren' : {	    # a specific account. You can change this, but
-                            # you'd have to modifiy the code as well.
+                            # you'd have to modify the code as well.
     'pocket': {
        'access_token': '',  # some key
     },
